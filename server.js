@@ -10,6 +10,9 @@ const io = useSocket(server, {
   cors: {
     origin: "*",
   },
+  transports: ["websocket"],
+  allowUpgrades: false,
+  pingInterval: 25000, // по умолчанию - 25000
   pingTimeout: 60000,
 });
 
