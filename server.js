@@ -317,6 +317,8 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnecting", async (reason) => {
+    console.log(reason);
+
     const newUsers = await db.query(
       `UPDATE USERS set isOnline = false, current_socket_id = null where current_socket_id = $1 returning *`,
       [socket.id.toString()]
