@@ -28,7 +28,7 @@ const io = useSocket(server, {
 
 app.use(
   cors({
-    origin: "https://online-chat-server-eisw.onrender.com",
+    origin: "https://artkurkin.github.io",
   })
 );
 
