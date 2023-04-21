@@ -12,8 +12,8 @@ const io = useSocket(server, {
   },
   transports: ["websocket"],
   allowUpgrades: false,
-  pingInterval: 25000, // по умолчанию - 25000
-  pingTimeout: 60000,
+  // pingInterval: 25000, // по умолчанию - 25000
+  // pingTimeout: 60000,
 });
 
 //cors заголовки
