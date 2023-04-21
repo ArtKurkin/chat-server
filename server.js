@@ -2,6 +2,7 @@
 const express = require("express");
 const useSocket = require("socket.io");
 const db = require("./db");
+const cors = require("cors");
 
 const app = express(); //создаем объект приложения
 const server = require("http").Server(app); //рабрта сервера через приложение express
