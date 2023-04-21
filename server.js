@@ -10,6 +10,7 @@ const io = useSocket(server, {
   cors: {
     origin: "*",
   },
+  pingTimeout: 60000,
 });
 
 //cors заголовки
