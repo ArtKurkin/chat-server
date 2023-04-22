@@ -344,7 +344,7 @@ io.on("connection", (socket) => {
 });
 
 //начинаем прослушивать подключение на 9999 порту
-server.listen(process.env.PORT, (err) => {
+server.listen(5000, (err) => {
   if (err) {
     throw Error(err);
   }
